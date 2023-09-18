@@ -29,17 +29,17 @@ function HomePage() {
                 <div className="intro-center-top"></div>
                 <div className="intro-center-main">
                     <Song
-                        imgSrc="/img/反方向的钟.png"
+                        imgSrc={process.env.PUBLIC_URL + "/img/反方向的钟.png"}
                         singer="周杰伦"
                         songName="反方向的钟"
                     />
                     <Song
-                        imgSrc="/img/学不会.png"
+                        imgSrc={process.env.PUBLIC_URL + "/img/学不会.png"}
                         singer="林俊杰"
                         songName="学不会"
                     />
                     <Song
-                        imgSrc="/img/说谎.png"
+                        imgSrc={process.env.PUBLIC_URL + "/img/说谎.png"}
                         singer="林宥嘉"
                         songName="说谎"
                     />
