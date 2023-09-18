@@ -1,3 +1,18 @@
+# JasWeb
+
+组成部分：intro页，个人简介，第一个”查看详情“
+
+## intro页
+主页面
+
+## 个人简介
+点击个人简介，查看jas的CV
+
+## 查看详情
+点击第一个”查看详情“，播放视频
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
