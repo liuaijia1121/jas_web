@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Song from './components/Song';
 import Footer from './components/Footer';
 import CV from './CV';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import VideoPlayer from './VideoPlayer';
 
 function App() {
