@@ -1,25 +1,52 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Song from './components/Song';
+import Footer from './components/Footer';
+import CV from './CV';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import VideoPlayer from './VideoPlayer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div id="intro">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/video" element={<VideoPlayer />} />
+                    <Route path="/cv" element={<CV />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
+    );
+}
+function HomePage() {
+    return (
+        <div className="intro-center">
+            <div className="intro-center-box">
+                <div className="intro-center-top"></div>
+                <div className="intro-center-main">
+                    <Song
+                        imgSrc="/img/反方向的钟.png"
+                        singer="周杰伦"
+                        songName="反方向的钟"
+                    />
+                    <Song
+                        imgSrc="/img/学不会.png"
+                        singer="林俊杰"
+                        songName="学不会"
+                    />
+                    <Song
+                        imgSrc="/img/说谎.png"
+                        singer="林宥嘉"
+                        songName="说谎"
+                    />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

@@ -1,38 +1,132 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "微软雅黑", system-ui;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: black;
+  display: block;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #e0e0e0;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+}
+
+body {
+  background-image: url('/public/img/background1.png');
+}
+
+.mainbox {
+  width: 1200px;
+  margin: auto;
+}
+
+#intro {
+  width: 100%;
+  min-width: 1200px;
+  position: relative;
+  float: left;
+}
+
+.intro-header {
+  width: 1200px;
+  height: 80px;
+  margin: 60px auto auto;
+  text-align: center;
+  position: relative;
+}
+
+
+
+
+.intro-center {
+  width: 100%;
+  min-height: 550px;
+  float: left;
+}
+
+
+.intro-center-box {
+  width: 1200px;
+  min-height: 550px;
+  margin: 30px auto auto;
+}
+
+.intro-center-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-song1, .intro-song2, .intro-song3 {
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro-song-img img, .intro-song2-img img, .intro-song3-img img {
+  transition: transform 0.8s ease-in-out;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro-song-img img:hover, .intro-song2-img img:hover, .intro-song3-img img:hover {
+  transform: scale(1.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.actor-name {
+  width: 300px;
+  height: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: -10px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.actor-introduce {
+  font-size: 12px;
+  width: 200px;
+  line-height: 17px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#footer {
+  width: 100%; /* Ensure the footer takes the full width of its container */
+  text-align: center; /* Center inline elements like text and links */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center block-level children horizontally */
+  align-items: center; /* Center block-level children vertically */
+}
+
+#footer ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove padding from the list */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center list items horizontally */
+}
+
+#footer ul li {
+  margin: 0 10px; /* Add some horizontal margin between list items */
 }
